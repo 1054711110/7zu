@@ -22,9 +22,9 @@ import store from "./store";
 
 
 // 引入vant-ui
-import vant from 'vant'
-import 'vant/lib/index.css';
-Vue.use(vant)
+// import vant from 'vant'
+// import 'vant/lib/index.css';
+// Vue.use(vant)
 
 
 // 定义路由守卫
