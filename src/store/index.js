@@ -1,0 +1,73 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex);
+export default new Vuex.Store({
+    state:{
+        loading:false,
+        bread:{
+            brea:['首页']
+        },
+        goods:[],
+        num:1,
+        list:[],
+        sum:1,
+        arr:[],
+        ade:{
+            adde:[]
+        },
+        gw:[],
+        bread:[],
+        aa:[],
+        user:'',
+        aa:''
+    },
+    mutations:{
+       adduser(state,user){
+           state.user=user
+       },
+       add(state,user){
+        state.aa=user
+    },
+    changeload(state,load){
+        state.loading=load
+    },
+    chanbread(state,bread){
+        state.bread.brea=bread
+    },
+    addgg(state,goods){
+        state.goods.push(goods)
+    },
+    addnum(state,index){
+       state.goods[index].number++
+    },
+    addsp(state,good){
+        state.list.push(good)
+    },
+    jansum(state,sum){
+        state.list[sum].count--
+    },
+    addgoods(state,goods){
+        state.arr.push(goods)
+    },
+    gb(state,oo){
+        state.arr[oo[0]].flag=oo[1]
+    },
+    del(state,oo){
+        state.arr.splice(oo,1)
+    },
+    addbr(state,aa){
+        state.ade.adde=aa
+    },
+    addgw(state,ee){
+        state.gw.push(ee)
+    },
+    brea(state,oo){
+        state.bread=oo
+    },
+    addgw(state,aa){
+        state.aa.push(aa)
+    }
+    },
+    actions: {},
+    modules: {}
+})
