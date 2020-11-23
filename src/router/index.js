@@ -77,17 +77,17 @@ const routes = [
       import( "../views/lx/02")
   },
   {
-<<<<<<< HEAD
+
     path: "/lx/onen",
     name: "/lx/onen",
     component: () =>
       import( "../views/lx/onen")
-=======
-    path: "/lx/7",
+},
+   {path: "/lx/7",
     name: "/lx/7",
     component: () =>
       import( "../views/lx/7")
->>>>>>> e523918ced446e83ae3a59f2692dbc3b286a3a3f
+
   },
   {
     path: "/lx/02",
