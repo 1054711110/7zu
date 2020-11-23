@@ -1,80 +1,209 @@
 <template>
   <div class="app">
-  
     <div class="btn">
       <van-image fit="contain" src="/img/logo.png" />
       <div class="dmt">
-      <van-icon name="manager-o" color="#999999" size="30" />
-      <p class="p1">我的</p>
-    </div>
+        <van-icon name="manager-o" color="#999999" size="30" />
+        <p class="p1">我的</p>
+      </div>
 
-    <div class="mtn">
-      <van-icon name="coupon-o" color="#999999" size="30" />
-      <p class="p1">导航</p>
-    </div>
+      <div class="mtn">
+        <van-icon name="coupon-o" color="#999999" size="30" />
+        <p class="p1">导航</p>
+      </div>
 
-    <van-swipe
-      class="my-swipe"
-      :autoplay="3000"
-      indicator-color="white"
-      v-for="(item,index) in img"
-      :key="index"
-    >
-      <van-swipe-item>
-        <img src="/img/banner.jpg" alt />
-      </van-swipe-item>
-      <van-swipe-item>
-        <img src="/img/banner.jpg" alt />
-      </van-swipe-item>
-      <van-swipe-item>
-        <img src="/img/banner.jpg" alt />
-      </van-swipe-item>
-      <van-swipe-item>
-        <img src="/img/banner.jpg" alt />
-      </van-swipe-item>
-    </van-swipe>
+      <van-swipe
+        class="my-swipe"
+        :autoplay="3000"
+        indicator-color="white"
+        v-for="(item,index) in img"
+        :key="index"
+      >
+        <van-swipe-item>
+          <img src="/img/banner.jpg" alt />
+        </van-swipe-item>
+        <van-swipe-item>
+          <img src="/img/banner.jpg" alt />
+        </van-swipe-item>
+        <van-swipe-item>
+          <img src="/img/banner.jpg" alt />
+        </van-swipe-item>
+        <van-swipe-item>
+          <img src="/img/banner.jpg" alt />
+        </van-swipe-item>
+      </van-swipe>
 
-    <van-grid :column-num="4">
-      <van-grid-item v-for="(item,index) in list" :key="index" icon="photo-o" :text="item.title" />
-    </van-grid>
+      <van-grid :column-num="4">
+        <van-grid-item v-for="(item,index) in list" :key="index" icon="photo-o" :text="item.title" />
+      </van-grid>
     </div>
 
     <div class="box">
-        <div class="quan">
-            <p>全屋装修费</p>
-            <ul class="bao">
-              <li>包设计、</li>
-              <li>包主材、</li>
-              <li>包水电、</li>
-              <li>包施工</li>
-            </ul>
-        </div>
-        <div class="url">
-            <img src="/img/img1.jpg" alt="">
-            <span class="sp"></span>
-            <span class="an"></span>
-        </div>
+      <div class="quan">
+        <p>全屋装修费</p>
+        <ul class="bao">
+          <li>包设计、</li>
+          <li>包主材、</li>
+          <li>包水电、</li>
+          <li>包施工</li>
+        </ul>
+      </div>
+      <div class="url">
+        <img src="/img/img1.jpg" alt />
+        <span class="sp"></span>
+        <span class="an"></span>
+      </div>
       <ul class="ul1">
-        <li><van-icon name="cart-circle-o" class="icon" color='#00be9c' />0增项，标准施工</li>
-        <li><van-icon name="cart-circle-o" class="icon" color='#00be9c' />杜绝项目包装</li>
-        <li><van-icon name="cart-circle-o" class="icon" color='#00be9c' />装修贷款</li>
+        <li>
+          <van-icon name="cart-circle-o" class="icon" color="#00be9c" />0增项，标准施工
+        </li>
+        <li>
+          <van-icon name="cart-circle-o" class="icon" color="#00be9c" />杜绝项目包装
+        </li>
+        <li>
+          <van-icon name="cart-circle-o" class="icon" color="#00be9c" />装修贷款
+        </li>
       </ul>
     </div>
-  <!-- <i class=".icon-popularity"></i> -->
-  <div class="zhuang">
-     <div class="quan">
-            <p>装修预约</p>
-            <ul class="bao">
-              <li>免费上门量房,设计方案满意为止</li>
-            </ul>
-        </div>
+    <!-- <i class=".icon-popularity"></i> -->
+    <div class="zhuang">
+      <div class="quan">
+        <p>装修预约</p>
+        <ul class="bao">
+          <li>免费上门量房,设计方案满意为止</li>
+        </ul>
+      </div>
       <div class="inp">
-        <input type="text" class="ut" placeholder="小区名">
-        <input type="text" class="ut" placeholder="手机号">
-        <input type="text" class="ut" placeholder="建工面积">
+        <input type="text" class="ut" placeholder="小区名" />
+        <input type="text" class="ut" placeholder="手机号" />
+        <input type="text" class="ut" placeholder="建工面积" />
         <button class="btn2">立即申请</button>
       </div>
+    </div>
+    <div class="ji">
+      <div class="quan">
+        <p>设计师</p>
+      </div>
+      <ul class="tul">
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>吴飞柯</p>
+          <p class="qin">优秀</p>
+        </li>
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>路炎龙</p>
+          <p class="qin">主任</p>
+        </li>
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>张海建</p>
+          <p class="qin">总监</p>
+        </li>
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>陈冲</p>
+          <p class="qin">优秀</p>
+        </li>
+      </ul>
+
+      <span class="sl">换一换</span>
+      <span class="sl1">更多设计师</span>
+    </div>
+
+    <div class="div1">
+      <div class="quan">
+        <p>效果图</p>
+      </div>
+      <div class="daimg">
+        <img src="img/y5.jpg" alt class="yiimg" />
+        <p>客厅</p>
+      </div>
+      <ul class="xiaoul">
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>卧室</p>
+        </li>
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>餐厅</p>
+        </li>
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>厨房</p>
+        </li>
+        <li>
+          <img src="/img/6.jpg" alt />
+          <p>阳台</p>
+        </li>
+      </ul>
+
+      <span class="sl">换一换</span>
+      <span class="sl1">更多设计师</span>
+    </div>
+
+    <div class="gong">
+      <div class="quan">
+        <p>工地直播</p>
+      </div>
+      <div class="daimg">
+        <img src="img/y5.jpg" alt class="yiimg" />
+      </div>
+      <p class="chong">
+        重汽贾泽源7栋
+        <span>泥木工程</span>
+      </p>
+      <span class="sl">换一换</span>
+      <span class="sl1">更多设计师</span>
+    </div>
+
+    <div class="xui">
+      <div class="quan">
+        <p>装修攻略</p>
+      </div>
+      <ul class="qian">
+        <li>
+          <img src="img/y5.jpg" alt />
+          <div class="xi">
+            <p>能让您长工资的家居风水</p>
+            <span class="sjian">2001-09-07</span>
+            <span class="guan">115</span>
+          </div>
+        </li>
+        <li>
+          <img src="img/y5.jpg" alt />
+          <div class="xi">
+            <p>能让您长工资的家居风水</p>
+            <span class="sjian">2001-09-07</span>
+            <span class="guan">115</span>
+          </div>
+        </li>
+        <li>
+          <img src="img/y5.jpg" alt />
+          <div class="xi">
+            <p>能让您长工资的家居风水</p>
+            <span class="sjian">2001-09-07</span>
+            <span class="guan">115</span>
+          </div>
+        </li>
+        <li>
+          <img src="img/y5.jpg" alt />
+          <div class="xi">
+            <p>能让您长工资的家居风水</p>
+            <span class="sjian">2001-09-07</span>
+            <span class="guan">115</span>
+          </div>
+        </li>
+      </ul>
+      <span class="sl">换一换</span>
+      <span class="sl1">更多设计师</span>
+    </div>
+
+  <div class="xia">
+    <van-icon name="arrow-up" size='30px' />
   </div>
+
+
   </div>
 </template>
 
@@ -240,19 +369,19 @@ export default {
   height: 100%;
   width: 100%;
 }
-span .van-grid-item__icon+.van-grid-item__text{
-  font-size: 100px!important;
+span .van-grid-item__icon + .van-grid-item__text {
+  font-size: 100px !important;
   color: #333;
 }
-.btn{
+.btn {
   background: #fff;
 }
-.box{
+.box {
   background: #ffff;
   margin-top: 20px;
   // border: 1px solid #000;
 }
-.quan{
+.quan {
   width: 80%;
   height: 42px;
   margin-top: 18px;
@@ -261,35 +390,34 @@ span .van-grid-item__icon+.van-grid-item__text{
   border-left: #00be9c 6px solid;
   float: left;
 
-  p{
+  p {
     line-height: 42px;
     font-size: 24px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
-.bao{
+.bao {
   float: right;
   margin-right: -50px;
   display: flex;
   margin-top: -20px;
-  li{
+  li {
     text-align: center;
     font-size: 14px;
     color: #9999;
-    
   }
 }
-.url{
+.url {
   width: 100%;
   height: 300px;
   background: #fff;
-  img{
-     width: 100%;
-  height: 200px;
+  img {
+    width: 100%;
+    height: 200px;
   }
-  .sp{
+  .sp {
     display: block;
     width: 10px;
     height: 10px;
@@ -297,45 +425,41 @@ span .van-grid-item__icon+.van-grid-item__text{
     background: #00be9c;
     float: left;
     margin-left: 150px;
-
   }
-  .an{
+  .an {
     background: #eee;
     display: block;
     width: 10px;
     height: 10px;
-     border-radius: 10px;
-     float: left;
-     margin-left: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
   }
 }
-.ul1{
-    width: 100%;
+.ul1 {
+  width: 100%;
   float: right;
   display: flex;
   background: #fff;
   height: 50px;
   margin-top: -5px;
-  li{
-     text-align: center;
-     margin-left:10px;
+  li {
+    text-align: center;
+    margin-left: 10px;
     line-height: 50px;
-    .icon{
+    .icon {
       font-size: 22px;
       float: left;
       margin-top: 15px;
-      
     }
   }
 }
-.zhuang{
+.zhuang {
   width: 100%;
-  border: 1px solid #000;
-  margin-top: 80px;
+  margin-top: 60px;
   background: #fff;
-
 }
-.ut{
+.ut {
   width: 80%;
   margin-left: 40px;
   height: 40px;
@@ -346,12 +470,201 @@ span .van-grid-item__icon+.van-grid-item__text{
   font-size: 18px;
   margin-top: 10px;
 }
-.btn2{
+.btn2 {
   width: 80%;
   margin-left: 40px;
   background: orange;
   height: 20px;
   line-height: 20px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.ji {
+  width: 100%;
+  background: #ffff;
+  margin-top: 10px;
+  height: 300px;
+}
+.tul {
+  display: flex;
+  width: 100%;
+  li {
+    width: 20%;
+    text-align: center;
+    margin-left: 20px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+}
+.qin {
+  width: 100px;
+  background: #00be9c;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.sl {
+  border: 1px #eee solid;
+  height: 30px;
+  width: 30%;
+  display: block;
+  color: #00be9c;
+  margin-left: 50px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  float: left;
+}
+.sl1 {
+  border: 1px #eee solid;
+  border-left: none;
+  height: 30px;
+  width: 40%;
+  display: block;
+  color: #00be9c;
+  // margin-left: -20px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  float: left;
+}
+.div1 {
+  width: 100%;
+  background: #fff;
+  margin-top: 10px;
+  height: 695px;
+}
+.yiimg {
+  width: 90%;
+  height: 300px;
+  margin-left: 25px;
+}
+.daimg {
+  position: relative;
+  p {
+    position: absolute;
+    opacity: 0.3;
+    background: #000;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 50px;
+    bottom: 10px;
+    color: #fff;
+  }
+}
+.xiaoul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  li {
+    text-align: center;
+    width: 40%;
+    margin-left: 25px;
+    position: relative;
+    margin-top: 15px;
+    img {
+      width: 210px;
+      height: 100px;
+    }
+    p {
+      position: absolute;
+      opacity: 0.3;
+      background: #000;
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      right: 10px;
+      bottom: 10px;
+      color: #fff;
+    }
+  }
+}
+.gong {
+  width: 100%;
+  background: #fff;
+  height: 500px;
+  margin-top: 20px;
+}
+.chong {
+  font-size: 22px;
+  margin-left: 20px;
+  margin-top: 10px;
+  span {
+    background: #00be9c;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+  }
+}
+.xui {
+  width: 100%;
+  background: #fff;
+  margin-top: 20px;
+  height: 500px;
+}
+.qian {
+  margin-top: 50px;
+  width: 100%;
+  li {
+    width: 100%;
+    border-bottom: 1px #ddd solid;
+    height: 180px;
+    margin-top: 50px;
+    img {
+      width: 180px;
+      height: 100px;
+      margin-left: 20px;
+      float: left;
+    }
+  }
+}
+.xi {
+  float: left;
+  margin-left: 20px;
+  p {
+    font-size: 20px;
+  }
+  .sjian {
+    display: block;
+    color: #9999;
+    float: left;
+    margin-top: 50px;
+  }
+  .guan {
+    display: block;
+    color: #9999;
+    float: left;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+}
+.xia{
+  width: 50px;
+  height: 50px;
+  background: burlywood;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  line-height: 70px;
+  text-align: center;
 }
 </style>
 
