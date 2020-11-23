@@ -76,6 +76,12 @@ const routes = [
     component: () =>
       import( "../views/lx/02")
   },
+  {
+    path: "/lx/onen",
+    name: "/lx/onen",
+    component: () =>
+      import( "../views/lx/onen")
+  },
 ];
 
 const router = new VueRouter({
