@@ -64,6 +64,18 @@ const routes = [
     component: () =>
       import( "../views/lx/list4")
   },
+  {
+    path: "/lx/01",
+    name: "/lx/01",
+    component: () =>
+      import( "../views/lx/01")
+  },
+  {
+    path: "/lx/02",
+    name: "/lx/02",
+    component: () =>
+      import( "../views/lx/02")
+  },
 ];
 
 const router = new VueRouter({
