@@ -89,6 +89,12 @@ const routes = [
       import( "../views/lx/7")
 
   },
+  {
+    path: "/lx/02",
+    name: "/lx/02",
+    component: () =>
+      import( "../views/lx/02")
+  },
 ];
 
 const router = new VueRouter({
